@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+.alert-message {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  display: none;
+  text-align: end;
+  margin: 0;
+}
+
+.red-border {
+  border: 0.5px solid hsl(0, 100%, 74%);
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: hsl(0, 100%, 74%);

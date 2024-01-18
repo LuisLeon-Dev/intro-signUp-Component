@@ -29,13 +29,46 @@
         <button class="btn btn_freeTrial">
           <span> Try it free 7 days</span> then $20/mo. thereafter
         </button>
-        <form action="">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="password" placeholder="Password" />
+        <form id="signUpForm">
+          <input
+            type="text"
+            id="firstName"
+            placeholder="First Name"
+            oninput="clearWarning (this, nameAlert)"
+          />
+          <p class="alert-message" id="nameAlert"></p>
 
-          <button class="btn btn_claim">Claim your free trial</button>
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Last Name"
+            oninput="clearWarning (this, lastNameAlert)"
+          />
+          <p class="alert-message" id="lastNameAlert"></p>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            oninput="clearWarning (this, emailAlert)"
+          />
+          <p class="alert-message" id="emailAlert"></p>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            oninput="clearWarning (this, passwordAlert)"
+          />
+          <p class="alert-message" id="passwordAlert"></p>
+
+          <button
+            class="btn btn_claim"
+            type="button"
+            onclick="{validateForm()}"
+          >
+            Claim your free trial
+          </button>
           <p class="terms_and_conditions_p">
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>
@@ -53,5 +86,7 @@
         <a href="https://github.com/LuisLeon-Dev" target="_blank">Luis</a>.
       </p>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
