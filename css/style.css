@@ -101,3 +101,40 @@ input:focus {
 }
 
 /*Respoonsive */
+
+@media (min-width: 890px) {
+  main {
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .section__info {
+    text-align: start;
+    width: 50%;
+    padding: 3.5rem;
+  }
+  .section__info h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .section__info {
+    text-align: start;
+    width: 50%;
+    padding: 3.5rem;
+  }
+  .section__info h1 {
+    font-size: 48px;
+  }
+  .section__info p {
+    font-size: 18px;
+  }
+}
